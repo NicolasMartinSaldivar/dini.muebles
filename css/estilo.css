@@ -227,3 +227,23 @@ footer h5 {
   font-size: 1rem;
   font-weight: 300;
 }
+
+/* ----------------Celular-------------------------*/
+@media screen and (max-width: 768px) {
+  .producto {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+/* ----------------Tabla-------------------------*/
+@media screen and (min-width: 1200px) {
+  .nav {
+    background-color: red;
+  }
+}
+/* ----------------Monitor-------------------------*/
+@media screen and (max-width: 1200px) {
+  .nav {
+    background-color: salmon;
+  }
+}
