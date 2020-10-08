@@ -1,3 +1,5 @@
+$colorprincipal: #dce2aa;
+
 body {
   font-size: 100%;
   background-color: whitesmoke;
@@ -7,7 +9,7 @@ body {
 .nav {
   width: 100%;
   display: flex;
-  background-color: #dce2aa;
+  background-color: $colorprincipal;
   margin-bottom: 5px;
   ul {
     display: flex;
@@ -129,7 +131,7 @@ body {
   form {
     width: 50%;
     margin: auto 10px;
-    background: #dce2aa;
+    background: $colorprincipal;
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 7px;
@@ -177,7 +179,7 @@ body {
 /* -------------------- Footer ---------------------------*/
 footer {
   width: 100%;
-  background-color: #dce2aa;
+  background-color: $colorprincipal;
   text-align: center;
   border-top: 2px solid black;
   margin-bottom: 0;
