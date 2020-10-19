@@ -14,32 +14,36 @@ body {
 .nav ul {
   display: flex;
   justify-content: flex-start;
+  margin: 10px;
 }
 .nav li {
   display: flex;
   justify-content: flex-start;
   list-style: none;
+  padding-left: 15px;
 }
 .nav li a {
   text-decoration: none;
 }
-.nav img {
+.nav li a img {
   width: 50px;
   height: 50px;
 }
 
 /* --------------------- titulo ------------------- */
-.marca img {
+.marca {
   display: block;
   margin: auto;
 }
-.marca img a {
+.marca a {
   text-decoration: none;
 }
-.marca img h1 {
+
+h1 {
   color: #b57f50;
   font-family: "Oswald", sans-serif;
   text-align: center;
+  font-size: 4.5rem;
 }
 
 .logo {
@@ -48,11 +52,11 @@ body {
 }
 
 .menu {
-  margin: 5px;
+  margin: -40px 5px;
   display: flex;
   justify-content: center;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .menu ul {
   display: flex;

@@ -5,29 +5,30 @@ body {
 }
 
 /* ---------------- Iconos superiores -------------------- */
-.nav {
+.redes {
   width: 100%;
   display: flex;
   background-color: #dce2aa;
   margin-bottom: 5px;
 }
 
-.nav ul {
+.redes ul {
   display: flex;
   justify-content: flex-start;
 }
 
-.nav li {
+.redes li {
   display: flex;
   justify-content: flex-start;
   list-style: none;
+  padding-left: 15px;
 }
 
-.nav li a {
+.redes li a {
   text-decoration: none;
 }
 
-.nav img {
+.redes img {
   width: 50px;
   height: 50px;
 }
@@ -46,6 +47,7 @@ h1 {
   color: #b57f50;
   font-family: "Oswald", sans-serif;
   text-align: center;
+  font-size: 4.5rem;
 }
 
 .logo {
@@ -53,12 +55,16 @@ h1 {
   height: 130px;
 }
 
+.open,
+.close {
+  display: none;
+}
 .menu {
-  margin: 5px;
+  margin: -40px 5px;
   display: flex;
   justify-content: center;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .menu ul {
@@ -258,27 +264,65 @@ footer {
   font-weight: 300;
 }
 
-/* ----------------Celular-------------------------*/
+/* ----------------Monitor-------------------------*/
+@media (max-width: 1080px) {
+  .menu ul {
+    flex-wrap: wrap;
+  }
+  .producto ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-@media screen and (max-width: 768px) {
-  .nav {
+@media (max-width: 768px) {
+  .redes {
     display: none;
   }
   .producto ul {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
   }
-}
-/* ----------------Tabla-------------------------*/
-@media screen and (max-width: 1024px) {
-  .producto ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s;
   }
-}
-/* ----------------Monitor-------------------------*/
-
-@media screen and (min-width: 1200px) {
+  .open,
+  .close {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+  .open img,
+  .close img {
+    width: 30px;
+  }
+  #nav:target {
+    left: 0;
+    opacity: 1;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .contenedor {
+    width: 60%;
+    margin: auto;
+  }
+  .dos ul {
+    align-items: flex-start;
+  }
+  #map {
+    display: none;
+  }
 }

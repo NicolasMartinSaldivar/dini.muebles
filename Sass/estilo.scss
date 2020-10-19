@@ -6,7 +6,7 @@ body {
   font-family: "Oswald", sans-serif;
 }
 /* ---------------- Iconos superiores -------------------- */
-.nav {
+.redes {
   width: 100%;
   display: flex;
   background-color: $colorprincipal;
@@ -14,43 +14,46 @@ body {
   ul {
     display: flex;
     justify-content: flex-start;
+    margin: 10px;
   }
   li {
     display: flex;
     justify-content: flex-start;
     list-style: none;
-  }
-  li a {
-    text-decoration: none;
-  }
-  img {
-    width: 50px;
-    height: 50px;
+    padding-left: 15px;
+    a {
+      text-decoration: none;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
 }
 /* --------------------- titulo ------------------- */
-.marca img {
+.marca {
   display: block;
   margin: auto;
   a {
     text-decoration: none;
   }
-  h1 {
-    color: #b57f50;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-  }
+}
+h1 {
+  color: #b57f50;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
 }
 .logo {
   width: 180px;
   height: 130px;
 }
 .menu {
-  margin: 5px;
+  margin: -40px 5px;
   display: flex;
   justify-content: center;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   ul {
     display: flex;
     width: 60%;
