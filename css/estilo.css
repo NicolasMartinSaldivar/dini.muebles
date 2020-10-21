@@ -5,27 +5,27 @@ body {
 }
 
 /* ---------------- Iconos superiores -------------------- */
-.nav {
+.redes {
   width: 100%;
   display: flex;
-  background-color: #dce2aa;
+  background-color: #db9d39;
   margin-bottom: 5px;
 }
-.nav ul {
+.redes ul {
   display: flex;
   justify-content: flex-start;
   margin: 10px;
 }
-.nav li {
+.redes li {
   display: flex;
   justify-content: flex-start;
   list-style: none;
   padding-left: 15px;
 }
-.nav li a {
+.redes li a {
   text-decoration: none;
 }
-.nav li a img {
+.redes li a img {
   width: 50px;
   height: 50px;
 }
@@ -141,7 +141,7 @@ h1 {
 .contacto form {
   width: 50%;
   margin: auto 10px;
-  background: #dce2aa;
+  background: #db9d39;
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 7px;
@@ -191,7 +191,7 @@ h1 {
 /* -------------------- Footer ---------------------------*/
 footer {
   width: 100%;
-  background-color: #dce2aa;
+  background-color: #db9d39;
   text-align: center;
   border-top: 2px solid black;
   margin-bottom: 0;
@@ -232,22 +232,74 @@ footer h5 {
   font-weight: 300;
 }
 
-/* ----------------Celular-------------------------*/
-@media screen and (max-width: 768px) {
-  .producto {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-}
-/* ----------------Tabla-------------------------*/
-@media screen and (min-width: 1200px) {
-  .nav {
-    background-color: red;
-  }
-}
 /* ----------------Monitor-------------------------*/
-@media screen and (max-width: 1200px) {
-  .nav {
-    background-color: salmon;
+@media (max-width: 1080px) {
+  .menu ul {
+    flex-wrap: wrap;
+  }
+
+  .producto ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .redes {
+    display: none;
+  }
+
+  .producto ul {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s;
+  }
+
+  .open,
+.close {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+
+  .open img,
+.close img {
+    width: 30px;
+  }
+
+  #nav:target {
+    left: 0;
+    opacity: 1;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .contenedor {
+    width: 60%;
+    margin: auto;
+  }
+
+  .dos ul {
+    align-items: flex-start;
+  }
+
+  #map {
+    display: none;
   }
 }

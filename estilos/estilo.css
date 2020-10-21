@@ -8,7 +8,7 @@ body {
 .redes {
   width: 100%;
   display: flex;
-  background-color: #dce2aa;
+  background-color: #db9d66;
   margin-bottom: 5px;
 }
 
@@ -161,7 +161,7 @@ h1 {
 form {
   width: 50%;
   margin: auto 10px;
-  background: #dce2aa;
+  background: #db9d66;
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 7px;
@@ -201,8 +201,17 @@ textarea {
   cursor: pointer;
 }
 
-#map {
+.datos {
   width: 50%;
+}
+.datos img {
+  width: 30px;
+}
+.datos li {
+  list-style: none;
+}
+.datos p {
+  font-size: 2.5rem;
 }
 
 /*---------------------Nosotros----------------------------*/
@@ -216,7 +225,7 @@ textarea {
 /* -------------------- Footer ---------------------------*/
 footer {
   width: 100%;
-  background-color: #dce2aa;
+  background-color: #b57f50;
   text-align: center;
   border-top: 2px solid black;
   margin-bottom: 0;
@@ -319,10 +328,16 @@ footer {
     width: 60%;
     margin: auto;
   }
+  .dos {
+    margin-left: 30px;
+  }
   .dos ul {
     align-items: flex-start;
   }
-  #map {
-    display: none;
+  form {
+    width: 100%;
+  }
+  .contacto {
+    flex-direction: column;
   }
 }
